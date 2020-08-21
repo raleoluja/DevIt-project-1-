@@ -1,0 +1,61 @@
+.about-me-container {
+  @extend %clearfix;
+}
+
+.about-img {
+  float: left;
+  width: 50%;
+  img {
+    width: 100%;
+    height: 565px;
+    object-fit: cover;
+  }
+}
+
+.about-content {
+  float: left;
+  width: 50%;
+  height: 565px;
+  background-color: $white-smoke;
+  .content-container {
+    padding: 110px 88px;
+    width: 70%;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: $rhenium;
+    margin-bottom: 31px;
+  }
+  .signature {
+    margin-left: -5px;
+  }
+}
+
+@include breakpoint(phone) {
+  .about-img {
+    float: none;
+    width: 100%;
+  }
+  .about-content {
+    float: none;
+    width: 100%;
+  }
+}
+
+@include breakpoint(small-phone) {
+  .about-img {
+    float: none;
+    width: 100%;
+  }
+  .about-content {
+    height: auto;
+    float: none;
+    width: 100%;
+    .content-container {
+      padding: 50px 20px;
+      width: 90%;
+    }
+  }
+}

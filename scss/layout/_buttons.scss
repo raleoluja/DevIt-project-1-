@@ -1,0 +1,17 @@
+.btn {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 18px 51px;
+    color: $white;
+    font-weight: 600;
+    font-family: $font-montserrat;
+    background-color: $blue;
+    text-transform: uppercase;
+    border: 2px solid $blue;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $white;
+      color: $blue;
+    }
+  }
